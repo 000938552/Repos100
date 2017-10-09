@@ -10,13 +10,15 @@ namespace Ticketing
         private int section;
         private int quantity;
         private bool discount;
+        private bool discount2;
         private decimal amountDue;
         private decimal mPrice;
 
         const decimal mdecBalcony = 15.5m;
         const decimal mdecGeneral = 18.75m;
         const decimal mdecBox = 12.0m;
-        const decimal mdecDiscount = 15.0m; 
+        const decimal mdecDiscount = 15.0m;
+        const decimal mdecDiscount2 = 10.0m;
 
         private int Section
         {
@@ -34,6 +36,11 @@ namespace Ticketing
         {
             get { return discount; }
             set { discount = value; }
+        }
+        private bool Discount2
+        {
+            get { return discount2; }
+            set { discount = value;}
         }
 
          public decimal AmountDue
